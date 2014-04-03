@@ -16,8 +16,8 @@ CONFIGURATION
 
 -	Login to the administrator area of Zencart ,
 -	Choose Modules -> Payment , you can see Zaakpay under the Payment Modules list ,
--	Click on the action tab and install it . If you do not see Zaakpay in the list make sure you have copied the file properly or 					there should be a bug in the file , 
--	Once it get installed , Enter your own Merchant Id and Secret Key provided by Zaakpay and select the Mode you want to work on ,
+-	Click on the action tab and install it . If you do not see Zaakpay in the list make sure you have copied the file properly, 
+-	Once it get installed , Enter your own Merchant Id and Secret Key provided by Zaakpay and select the Mode you want to work on,
 -	Click update/save .
 
 
