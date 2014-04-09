@@ -199,15 +199,6 @@ class Checksum {
 	  $temp=mysql_query("select value from currencies where code='INR'")or die(mysql_error());
 	
 	  $currency_value=mysql_fetch_array($temp);
-	  $products_ordered = '';
-	  for ($i=0, $n=sizeof($order->products); $i<$n; $i++) {  
-	   $products_ordered .= $order->products[$i]['qty'] . ' x ' . $order->products[$i]['name'] . ' (' . $order->products[$i]['model'] . ') = ' . $currencies->display_price($order->products[$i]['final_price'], $order->products[$i]['tax'], $order->products[$i]['qty']) . $products_ordered_attributes . "\n";
-	  }
-	  $products_ordered .= "\n";
-	  $order_totals = $order_total_modules->process();
-	   for ($i=0, $n=sizeof($order_totals); $i<$n; $i++) {
-		$products_ordered .= strip_tags($order_totals[$i]['title']) . ' ' . strip_tags($order_totals[$i]['text']) . "\n";
-	  }
 	  
 	
 	 $log = MODULE_PAYMENT_ZAAKPAY_LOG ;
